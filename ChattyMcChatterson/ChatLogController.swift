@@ -18,7 +18,9 @@ class ChatLogController: BaseChatViewController {
 	var decorator = Decorator()
 	
 	override func createPresenterBuilders() -> [ChatItemType : [ChatItemPresenterBuilderProtocol]] {
-		return [ChatItemType : [ChatItemPresenterBuilderProtocol]]()
+		let textMessageBuilder = TextMessagePresenterBuilder(viewModelBuilder: TextBuilder(),
+		                                                     interactionHandler: TextHandler())
+		return [TextModel.chatItemType : [textMessageBuilder]]
 	}
 	
 	override func createChatInputView() -> UIView {
@@ -35,7 +37,12 @@ class ChatLogController: BaseChatViewController {
 	func handleSend() -> TextChatInputItem {
 		let item = TextChatInputItem()
 		item.textInputHandler = { text in
-			let message = MessageModel(uid: "", senderId: "", type: "", isIncoming: false, date: Date(), status: .success)
+			
+			let date = Date()
+			let dateDouble = Double(date.timeIntervalSinceReferenceDate)
+			let senderID = "the_sender"
+			
+			let message = MessageModel(uid: "(\(dateDouble, senderID))", senderId: senderID, type: TextModel.chatItemType, isIncoming: false, date: date, status: .success)
 			let textMessage = TextModel(messageModel: message, text: text)
 			self.dataSource.addTextMessage(message: textMessage)
 		}

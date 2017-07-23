@@ -18,7 +18,7 @@ class Decorator: ChatItemsDecoratorProtocol {
 		
 		for item in chatItems {
 			let decoratedItem = DecoratedChatItem(chatItem: item,
-			                                      decorationAttributes: ChatItemDecorationAttributes(bottomMargin: 10,
+			                                      decorationAttributes: ChatItemDecorationAttributes(bottomMargin: 3,
 			                                                                                         showsTail: false,
 			                                                                                         canShowAvatar: false))
 			decoratedItems.append(decoratedItem)

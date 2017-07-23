@@ -12,6 +12,8 @@ import ChattoAdditions
 
 class TextModel: TextMessageModel<MessageModel> {
 	
+	static var chatItemType = "text"
+	
 	override init(messageModel: MessageModel, text: String) {
 		super.init(messageModel: messageModel, text: text)
 	}
