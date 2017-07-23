@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		109D8FC91F25108E00EE4F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D8FC81F25108E00EE4F0D /* AppDelegate.swift */; };
-		109D8FCB1F25108E00EE4F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D8FCA1F25108E00EE4F0D /* ViewController.swift */; };
+		109D8FCB1F25108E00EE4F0D /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D8FCA1F25108E00EE4F0D /* ChatLogController.swift */; };
 		109D8FCE1F25108E00EE4F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109D8FCC1F25108E00EE4F0D /* Main.storyboard */; };
 		109D8FD01F25108E00EE4F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109D8FCF1F25108E00EE4F0D /* Assets.xcassets */; };
 		109D8FD31F25108E00EE4F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109D8FD11F25108E00EE4F0D /* LaunchScreen.storyboard */; };
+		96786D606A60C90E74FA7BC3 /* Pods_ChattyMcChatterson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40825AC47C06648720E23203 /* Pods_ChattyMcChatterson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		109D8FC51F25108E00EE4F0D /* ChattyMcChatterson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChattyMcChatterson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109D8FC81F25108E00EE4F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		109D8FCA1F25108E00EE4F0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		109D8FCA1F25108E00EE4F0D /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		109D8FCD1F25108E00EE4F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		109D8FCF1F25108E00EE4F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109D8FD21F25108E00EE4F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		109D8FD41F25108E00EE4F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40825AC47C06648720E23203 /* Pods_ChattyMcChatterson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattyMcChatterson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1B006B137092BF28855D69 /* Pods-ChattyMcChatterson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyMcChatterson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChattyMcChatterson/Pods-ChattyMcChatterson.debug.xcconfig"; sourceTree = "<group>"; };
+		857F0A2E0D85EF0EAD9C78B7 /* Pods-ChattyMcChatterson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyMcChatterson.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChattyMcChatterson/Pods-ChattyMcChatterson.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96786D606A60C90E74FA7BC3 /* Pods_ChattyMcChatterson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				109D8FC71F25108E00EE4F0D /* ChattyMcChatterson */,
 				109D8FC61F25108E00EE4F0D /* Products */,
+				80E6E0AF97CC048FCA80D21D /* Pods */,
+				67D78F3F71A6348B6448ABA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +62,30 @@
 			isa = PBXGroup;
 			children = (
 				109D8FC81F25108E00EE4F0D /* AppDelegate.swift */,
-				109D8FCA1F25108E00EE4F0D /* ViewController.swift */,
+				109D8FCA1F25108E00EE4F0D /* ChatLogController.swift */,
 				109D8FCC1F25108E00EE4F0D /* Main.storyboard */,
 				109D8FCF1F25108E00EE4F0D /* Assets.xcassets */,
 				109D8FD11F25108E00EE4F0D /* LaunchScreen.storyboard */,
 				109D8FD41F25108E00EE4F0D /* Info.plist */,
 			);
 			path = ChattyMcChatterson;
+			sourceTree = "<group>";
+		};
+		67D78F3F71A6348B6448ABA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40825AC47C06648720E23203 /* Pods_ChattyMcChatterson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80E6E0AF97CC048FCA80D21D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B006B137092BF28855D69 /* Pods-ChattyMcChatterson.debug.xcconfig */,
+				857F0A2E0D85EF0EAD9C78B7 /* Pods-ChattyMcChatterson.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 109D8FD71F25108E00EE4F0D /* Build configuration list for PBXNativeTarget "ChattyMcChatterson" */;
 			buildPhases = (
+				B76DF259CD7C3DDC3B9CF56D /* [CP] Check Pods Manifest.lock */,
 				109D8FC11F25108E00EE4F0D /* Sources */,
 				109D8FC21F25108E00EE4F0D /* Frameworks */,
 				109D8FC31F25108E00EE4F0D /* Resources */,
+				9F5058F7A081FC298CF534EB /* [CP] Embed Pods Frameworks */,
+				9D9D7C735C94FA3DB2AC8DD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +159,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D9D7C735C94FA3DB2AC8DD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChattyMcChatterson/Pods-ChattyMcChatterson-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F5058F7A081FC298CF534EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChattyMcChatterson/Pods-ChattyMcChatterson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B76DF259CD7C3DDC3B9CF56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		109D8FC11F25108E00EE4F0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				109D8FCB1F25108E00EE4F0D /* ViewController.swift in Sources */,
+				109D8FCB1F25108E00EE4F0D /* ChatLogController.swift in Sources */,
 				109D8FC91F25108E00EE4F0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +334,7 @@
 		};
 		109D8FD81F25108E00EE4F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1B006B137092BF28855D69 /* Pods-ChattyMcChatterson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75DE4KA4WT;
@@ -272,6 +348,7 @@
 		};
 		109D8FD91F25108E00EE4F0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 857F0A2E0D85EF0EAD9C78B7 /* Pods-ChattyMcChatterson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75DE4KA4WT;
@@ -302,6 +379,7 @@
 				109D8FD91F25108E00EE4F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
