@@ -33,7 +33,8 @@ class ChatLogController: BaseChatViewController {
 	func handleSend() -> TextChatInputItem {
 		let item = TextChatInputItem()
 		item.textInputHandler = { text in
-			print(text)
+			let message = MessageModel(uid: "", senderId: "", type: "", isIncoming: false, date: Date(), status: .success)
+			let textMessage = TextModel(messageModel: message, text: text)
 		}
 		
 		return item
