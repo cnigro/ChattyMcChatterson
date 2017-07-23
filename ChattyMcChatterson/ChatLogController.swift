@@ -14,6 +14,8 @@ import ChattoAdditions
 class ChatLogController: BaseChatViewController {
 	
 	var presenter: BasicChatInputBarPresenter!
+	var dataSource = DataSource()
+	var decorator = Decorator()
 	
 	override func createPresenterBuilders() -> [ChatItemType : [ChatItemPresenterBuilderProtocol]] {
 		return [ChatItemType : [ChatItemPresenterBuilderProtocol]]()
@@ -35,6 +37,7 @@ class ChatLogController: BaseChatViewController {
 		item.textInputHandler = { text in
 			let message = MessageModel(uid: "", senderId: "", type: "", isIncoming: false, date: Date(), status: .success)
 			let textMessage = TextModel(messageModel: message, text: text)
+			self.dataSource.addTextMessage(message: textMessage)
 		}
 		
 		return item
@@ -42,7 +45,8 @@ class ChatLogController: BaseChatViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		chatDataSource = dataSource
+		chatItemsDecorator = decorator
 	}
 
 	override func didReceiveMemoryWarning() {
